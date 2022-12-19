@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/orderHis"
+        android:icon="@drawable/ic_baseline_history_24"
+
+        android:title="Order History" />
+
+    <item
+        android:id="@+id/signout"
+        android:icon="@drawable/ic_baseline_supervised_user_circle_24"
+
+        android:title="Sign Out" />
+</menu>

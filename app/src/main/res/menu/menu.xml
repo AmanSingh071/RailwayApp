@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:iconTint="@color/white"
+        android:title="Home"
+
+        />
+    <item
+        android:id="@+id/history"
+        android:icon="@drawable/ic_baseline_settings_24"
+        android:iconTint="@color/white"
+        android:title="settings"
+
+        />
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/ic_baseline_person_pin_24"
+        android:iconTint="@color/white"
+        android:title="Profile"
+
+        />
+    <item
+        android:id="@+id/setting"
+        android:icon="@drawable/ic_baseline_history_24"
+        android:iconTint="@color/white"
+        android:title="History"
+
+        />
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/ic_baseline_search_24"
+        android:iconTint="@color/white"
+        android:title="Search"
+
+        />
+
+</menu>
