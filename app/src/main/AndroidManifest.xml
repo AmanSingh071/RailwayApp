@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -15,6 +16,13 @@
         android:theme="@style/Theme.Railway"
         tools:targetApi="31">
         <activity
+            android:name=".activities.Activities.bookTickets"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".activities.Activities.Splashscreen"
             android:exported="true">
             <intent-filter>
@@ -25,21 +33,19 @@
         </activity>
         <activity
             android:name=".activities.Activities.homepageActivity"
-            android:exported="false"></activity>
+            android:exported="false" />
         <activity
             android:name=".activities.Activities.otpVerify"
-            android:exported="false"></activity>
+            android:exported="false" />
         <activity
             android:name=".activities.Activities.signupActivity"
-            android:exported="false"></activity>
+            android:exported="false" />
         <activity
             android:name=".activities.Activities.loginActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".activities.Activities.forgotPassword"
-            android:exported="false"></activity>
+            android:exported="false" />
     </application>
 
 </manifest>

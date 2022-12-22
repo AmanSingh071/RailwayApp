@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#3E3D3D"
+
+    android:layout_height="match_parent"
+    tools:context=".activities.Activities.bookTickets">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_gradient"
+            android:padding="5dp"
+            android:orientation="vertical"
+            >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TRAIN SEARCH"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:textSize="17dp"
+
+            >
+
+        </TextView>
+            <TextView
+                android:id="@+id/idTVCurrent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:textSize="9dp"
+
+
+                android:textColor="@color/white"
+                android:text="Time"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+
+        android:gravity="center"
+        >
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            app:strokeColor="#8A8686"
+            app:strokeWidth="1dp"
+android:backgroundTint="#1E1D1D"
+          android:layout_gravity="center"
+
+            android:elevation="33dp"
+
+
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Train name"
+                     android:layout_marginLeft="100dp"
+                    android:id="@+id/trainanme"
+                    android:textSize="29dp"
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Train num"
+                    android:layout_marginLeft="130dp"
+                    android:id="@+id/trainnum"
+                    android:textSize="19dp"
+                    android:padding="10dp"
+                    android:textColor="#333333"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+
+                    android:background="#4C4D4E"
+                    />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="From"
+                        android:textSize="19dp"
+                        android:padding="10dp"
+                        android:textColor="@color/white"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="To"
+                        android:textSize="19dp"
+                        android:layout_marginLeft="250dp"
+                        android:padding="10dp"
+                        android:textColor="@color/white"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+
+                    android:background="#4C4D4E"
+                    />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="City Name"
+                        android:textSize="19dp"
+                        android:padding="10dp"
+                        android:textColor="@color/white"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Destination"
+                        android:textSize="19dp"
+                        android:layout_marginLeft="135dp"
+                        android:padding="10dp"
+                        android:textColor="@color/white"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+
+                    android:background="#4C4D4E"
+                    />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Class"
+                        android:layout_marginRight="55dp"
+                        android:layout_marginTop="30dp"
+                        android:textSize="19dp"
+                        android:padding="10dp"
+                        android:textColor="@color/white"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+
+                        android:background="#4C4D4E"
+                        />
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+
+                        android:layout_margin="20dp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <!-- Inside text input layout add
+                              an auto complete text view
+                                and make its input type to none-->
+                        <AutoCompleteTextView
+                            android:id="@+id/autoCompleteTextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+
+                            android:textColor="@color/white"
+                            android:inputType="none"
+                            android:text="Choose Train Class"
+                            />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+
+                    android:background="#4C4D4E"
+                    />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No of Seats"
+                        android:layout_marginTop="30dp"
+                        android:textSize="19dp"
+                        android:padding="10dp"
+                        android:textColor="@color/white"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+
+                        android:background="#4C4D4E"
+                        />
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20dp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <!-- Inside text input layout add
+                              an auto complete text view
+                                and make its input type to none-->
+                        <AutoCompleteTextView
+                            android:id="@+id/autoCompleteTextView2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:textColor="@color/white"
+
+
+                            android:inputType="none"
+                            android:text="Choose Train Seats"
+                            />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+
+                    android:background="#4C4D4E"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date"
+                    android:textSize="19dp"
+
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+
+                    android:background="#4C4D4E"
+                    />
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:padding="17dp"
+
+                    android:backgroundTint="@color/orange"
+                    android:text="Book Ticket"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginLeft="60dp"
+                    app:cornerRadius="20dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginBottom="50dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView2"
+                    tools:ignore="MissingConstraints" />
+
+
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+    </LinearLayout>
+</ScrollView>
