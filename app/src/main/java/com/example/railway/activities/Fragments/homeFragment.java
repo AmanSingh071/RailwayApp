@@ -31,7 +31,8 @@ public class homeFragment extends Fragment {
     FirebaseDatabase firebaseDatabase;
     DatabaseReference databaseReference;
 
-    ArrayList<trainModel> list;
+
+    public static ArrayList<trainModel> list;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

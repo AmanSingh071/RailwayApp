@@ -11,10 +11,13 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.railway.R;
+import com.example.railway.activities.Fragments.homeFragment;
+import com.example.railway.activities.Models.trainModel;
 import com.example.railway.databinding.ActivityBookTicketsBinding;
 import com.example.railway.databinding.ActivityForgotPasswordBinding;
 
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 
 public class bookTickets extends AppCompatActivity {
@@ -23,6 +26,8 @@ public class bookTickets extends AppCompatActivity {
     String [] seatsnum={"1","2","3","4","5","6","7","8","9"};
     AutoCompleteTextView autoCompleteTextView;
     ArrayAdapter<String> arrayAdapter;
+    int position=0;
+    ArrayList<trainModel> list;
     private TextView currentTV;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,7 +72,28 @@ public class bookTickets extends AppCompatActivity {
         // on below line we are setting current
         // date and time to our text view.
         currentTV.setText(currentDateAndTime);
+        initializelayout();
+
+    }
+
+    private void initializelayout() {
+        Bundle extras=getIntent().getExtras();
+
+        position = extras.getInt("index",0);
+        switch (extras.getString("class"))
+        {
+            case  "uploadAdapter":
+                list=new ArrayList<trainModel>();
+                list.addAll(homeFragment.list);
+                binding.trainanme.setText(list.get(position).getName());
+                binding.trainnum.setText(list.get(position).getTrainnnum());
+                binding.traincity.setText(list.get(position).getCity());
+                binding.traindate.setText(list.get(position).getDate());
+                binding.traindestination.setText(list.get(position).getDestination());
 
 
+                break;
+
+        }
     }
 }
