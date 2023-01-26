@@ -11,9 +11,15 @@
 
 
 
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
 
 
-    <ImageView
+        android:src="@drawable/imgmov" />
+
+   <!-- <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
@@ -23,7 +29,7 @@
         >
 
 
-    </ImageView>
+    </ImageView>-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"

@@ -40,7 +40,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <EditText
-                        android:id="@+id/search"
+                        android:id="@+id/searchtrain"
                         android:layout_width="380dp"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="5dp"
@@ -102,7 +102,7 @@
                         android:background="@drawable/bg_search"
                         >
 
-                        <com.google.android.material.imageview.ShapeableImageView
+                   <!--     <com.google.android.material.imageview.ShapeableImageView
                             android:layout_width="390dp"
                             android:layout_height="100dp"
                             android:scaleType="centerCrop"
@@ -110,7 +110,14 @@
                             app:shapeAppearanceOverlay="@style/imgrad3"
                             android:layout_marginTop="13dp"
                             android:src="@drawable/trainlogo"
-                            />
+                            />-->
+                        <pl.droidsonroids.gif.GifImageView
+                            android:layout_width="390dp"
+                            android:layout_height="100dp"
+                            android:scaleType="centerCrop"
+
+
+                            android:src="@drawable/train" />
                     </com.google.android.material.card.MaterialCardView>
 
                     <LinearLayout

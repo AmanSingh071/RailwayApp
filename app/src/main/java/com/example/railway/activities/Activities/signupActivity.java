@@ -97,27 +97,13 @@ public class signupActivity extends AppCompatActivity {
             }
         });
 
-
-
-
-
-
-
-
-
-
-
-
-
     }
     private void storeuserdata(String email1, String pass1, String userName1) {
         firebaseDatabase=FirebaseDatabase.getInstance();
-        databaseReference= firebaseDatabase.getReference("user").child(auth.getCurrentUser().getUid());
+        databaseReference= firebaseDatabase.getReference("user").child(auth.getCurrentUser().getUid()).push();
 
-        Users=new users();
-        Users.setEmail(email1);
-        Users.setPassword(pass1);
-        Users.setUsername(userName1);
+        Users=new users(email1,pass1,userName1);
+
         databaseReference.setValue(Users);
 
 

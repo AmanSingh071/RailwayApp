@@ -1,24 +1,27 @@
 package com.example.railway.activities.Models;
 
-public class trainModel {
+public class trainbookmodel {
     String name;
     String destination;
     String city;
     String date;
     String trainnnum;
+    String trainclass;
+    String trainseats;
     String id;
+    public trainbookmodel(){
 
-    public trainModel(String name, String destination, String city, String date, String trainnnum, String id) {
+    }
+
+    public trainbookmodel(String name, String destination, String city, String date, String trainnnum, String trainclass, String trainseats, String id) {
         this.name = name;
         this.destination = destination;
         this.city = city;
         this.date = date;
         this.trainnnum = trainnnum;
+        this.trainclass = trainclass;
+        this.trainseats = trainseats;
         this.id = id;
-    }
-
-    public trainModel(){
-
     }
 
     public String getId() {
@@ -67,5 +70,21 @@ public class trainModel {
 
     public void setTrainnnum(String trainnnum) {
         this.trainnnum = trainnnum;
+    }
+
+    public String getTrainclass() {
+        return trainclass;
+    }
+
+    public void setTrainclass(String trainclass) {
+        this.trainclass = trainclass;
+    }
+
+    public String getTrainseats() {
+        return trainseats;
+    }
+
+    public void setTrainseats(String trainseats) {
+        this.trainseats = trainseats;
     }
 }

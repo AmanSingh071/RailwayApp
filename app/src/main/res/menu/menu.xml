@@ -9,9 +9,9 @@
         />
     <item
         android:id="@+id/history"
-        android:icon="@drawable/ic_baseline_settings_24"
+        android:icon="@drawable/ic_baseline_history_24"
         android:iconTint="@color/white"
-        android:title="settings"
+        android:title="History"
 
         />
     <item
@@ -23,9 +23,9 @@
         />
     <item
         android:id="@+id/setting"
-        android:icon="@drawable/ic_baseline_history_24"
+        android:icon="@drawable/ic_baseline_settings_24"
         android:iconTint="@color/white"
-        android:title="History"
+        android:title="Settings"
 
         />
     <item
@@ -35,5 +35,6 @@
         android:title="Search"
 
         />
+
 
 </menu>

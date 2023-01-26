@@ -1,15 +1,257 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="#FF0048"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#000000"
+
     android:layout_height="match_parent"
-    tools:context=".activities.Fragments.profileFragment">
+
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        >
+
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="profile" />
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_gradient"
+        android:padding="5dp"
+        android:orientation="vertical"
+        >
 
-</FrameLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:textSize="27dp"
+
+            >
+
+        </TextView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_gradient2"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:padding="5dp"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:textSize="27dp"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textColor="@color/white"
+            android:id="@+id/username"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+
+            >
+
+        </TextView>
+
+    </LinearLayout>
+
+    <!-- TODO: Update blank fragment layout -->
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="380dp"
+        android:layout_height="710dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        app:strokeColor="@color/white"
+        app:strokeWidth="1dp"
+
+        android:backgroundTint="#2E2C2C"
+        >
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/cardpro"
+
+            android:layout_marginLeft="15dp"
+            android:backgroundTint="#1F2020"
+            android:background="@drawable/bg_search"
+
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textStyle="bold"
+                android:textSize="13sp"
+                android:textColor="@color/white"
+                />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/proname"
+                    android:text="Name"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="150dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="110dp"
+
+                android:background="#4C4D4E"
+                />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Email"
+                        android:textStyle="bold"
+                        android:padding="5dp"
+                        android:textSize="13sp"
+                        android:textColor="@color/white"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/proemail"
+                        android:text="Email"
+                        android:textStyle="bold"
+                        android:textSize="13sp"
+                        android:textColor="@color/white"
+                        android:layout_marginLeft="150dp"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="110dp"
+
+                        android:background="#4C4D4E"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <Button
+                        android:id="@+id/checkhisbtn"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:padding="17dp"
+
+
+                        android:backgroundTint="@color/orange"
+                        android:text="Check youe Previous Bookings"
+                        android:layout_marginTop="50dp"
+                     android:layout_gravity="center"
+                        app:cornerRadius="20dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:layout_marginBottom="50dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+                        tools:ignore="MissingConstraints" />
+                    <Button
+                        android:id="@+id/logoutpro"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:padding="12dp"
+
+                        android:backgroundTint="@color/blue"
+                        android:text="LOG OUT"
+
+                        android:layout_marginTop="50dp"
+                        android:layout_gravity="center"
+
+                        app:cornerRadius="20dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:layout_marginBottom="50dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+                        tools:ignore="MissingConstraints" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:id="@+id/returnpagepro"
+            android:visibility="gone"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:text="Please Log In First"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                />
+
+            <Button
+                android:id="@+id/btnproreturn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+
+                android:backgroundTint="@color/orange"
+                android:textStyle="bold"
+                android:text="Return to login Screen?"
+
+                app:cornerRadius="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginBottom="50dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView2"
+                tools:ignore="MissingConstraints" />
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+</ScrollView>
